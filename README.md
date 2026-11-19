@@ -9,8 +9,8 @@ Think of it as the GPU compute evolution of [Skia-AliveGrid](https://github.com/
     
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/LaMitaOne/Skia-GPU-Alive-Particle-Components)    
       
-<img height="400" alt="Unbenannt" src="https://github.com/user-attachments/assets/c1fd063c-d5b0-43c6-99e7-11f50ae195a6" />
-     
+<img height="400" alt="Unbenannt" src="https://github.com/user-attachments/assets/eb7425d4-4001-44ba-b3a2-c16d18cfb416" />
+      
 Sample Video: https://www.youtube.com/watch?v=1mzdYyLKNJs    
      
 ## The Idea
