@@ -2,7 +2,7 @@
 
 GPU-accelerated, physics-driven particle UI components powered by **Skia4Delphi** and **OpenGL Compute Shaders**.
 
-Think of it as the GPU compute evolution of [Skia-AliveGrid](https://github.com) — instead of simulating a few hundred particles on the CPU, UI controls themselves are formed out of hundreds of thousands (or millions) of interactive GPU particles.     
+Think of it as the GPU compute evolution of [Skia-AliveGrid](https://github.com/LaMitaOne/Skia-AliveGrid) — instead of simulating a few hundred particles on the CPU, UI controls themselves are formed out of hundreds of thousands (or millions) of interactive GPU particles.     
 
 > **Status: v0.1 – Early Proof of Concept**  
 > Right now this is an experimental first build ("the laptop didn't catch fire" edition). APIs will change, things might still be rough around the edges, and more components are planned down the road.
