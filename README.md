@@ -10,7 +10,9 @@ Think of it as the GPU compute evolution of [Skia-AliveGrid](https://github.com/
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/LaMitaOne/Skia-GPU-Alive-Particle-Components)    
       
 <img height="400" alt="Unbenannt" src="https://github.com/user-attachments/assets/c1fd063c-d5b0-43c6-99e7-11f50ae195a6" />
- 
+     
+Sample Video: https://www.youtube.com/watch?v=1mzdYyLKNJs    
+     
 ## The Idea
 
 Standard UI controls are static rectangles. **GPUAliveParticleComponents** turns buttons, labels, and containers into living particle fields that react in real time to mouse movement, hover forces, clicks, and text/layout morphing — while keeping the CPU cool.
