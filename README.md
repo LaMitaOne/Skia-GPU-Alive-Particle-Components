@@ -1,4 +1,4 @@
-# Skia-GPUAliveParticleComponents (v0.1 PoC)
+# Skia-GPU Alive Particle Components (v0.1 PoC)
 
 GPU-accelerated, physics-driven particle UI components powered by **Skia4Delphi** and **OpenGL Compute Shaders**.
 
