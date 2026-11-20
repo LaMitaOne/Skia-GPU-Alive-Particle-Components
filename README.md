@@ -10,9 +10,10 @@ Think of it as the GPU compute evolution of [Skia-AliveGrid](https://github.com/
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/LaMitaOne/Skia-GPU-Alive-Particle-Components)         
       
 <img width="1161" height="829" alt="Unbenannt" src="https://github.com/user-attachments/assets/c4dfd20b-ef98-486f-8178-de6fdb4adf82" />
-       
-Sample Video (v0.1): https://www.youtube.com/watch?v=1mzdYyLKNJs  
-       
+        
+Sample Video (v0.2): https://youtu.be/XnM0PPpVIkM      
+Sample Video (v0.1): https://youtu.be/1mzdYyLKNJs    
+        
 ## The Idea       
        
 Standard UI controls are static rectangles. **GPUAliveParticleComponents** turns labels, buttons, text inputs, and images into living particle fields that react in real time to mouse movement, flashlight hover glow, click light-runners, spawn/despawn explosions, and live text morphing — all driven on the GPU via OpenGL 4.3+ Compute Shaders.  
