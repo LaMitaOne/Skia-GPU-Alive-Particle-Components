@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes,
-  System.Skia,
+  System.Skia, Winapi.Windows,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Edit, FMX.ListBox, FMX.Objects, FMX.Layouts,
   uGPUAliveComponentHost;
@@ -235,6 +235,7 @@ begin
   if FHost <> nil then
     FHost.Active := False;
   CanClose := True;
+  TerminateProcess(GetCurrentProcess, 0);
 end;
 
 procedure TForm1.KeyDown(var Key: Word; var KeyChar: Char; Shift: TShiftState);
