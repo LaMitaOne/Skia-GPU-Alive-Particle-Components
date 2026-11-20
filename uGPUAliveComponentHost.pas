@@ -15,7 +15,7 @@ unit uGPUAliveComponentHost;
   The result: buttons "breathe", labels shimmer, mouse movement stirs the
   particles up, clicks send shockwaves through the field - all on the GPU.
 
-  Part of the "Alive" family: uGPUAliveGrid, uGPUAliveProgress, ...
+  Part of the "Alive" family: AliveGrid, AliveProgress, ...
 
   ==============================================================================
   ARCHITECTURE
