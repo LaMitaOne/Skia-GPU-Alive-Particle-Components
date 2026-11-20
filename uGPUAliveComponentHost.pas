@@ -2971,18 +2971,36 @@ procedure TGPUAliveComponentHost.CleanupOffscreenGL;
 begin
   if FGLContext <> 0 then
   begin
-    wglMakeCurrent(FDummyDC, FGLContext);
-    if FParticleProgram <> 0 then
-      glDeleteProgram(FParticleProgram);
-    if FDecayProgram <> 0 then
-      glDeleteProgram(FDecayProgram);
-    if FOutputTex <> 0 then
-      glDeleteTextures(1, @FOutputTex);
-    if FParticleSSBO <> 0 then
-      glDeleteBuffers(1, @FParticleSSBO);
-    if (FPBOs[0] <> 0) or (FPBOs[1] <> 0) then
-      glDeleteBuffers(2, @FPBOs[0]);
-    wglMakeCurrent(0, 0);
+    if (FDummyDC <> 0) and wglMakeCurrent(FDummyDC, FGLContext) then
+    begin
+      if FParticleProgram <> 0 then
+      begin
+        glDeleteProgram(FParticleProgram);
+        FParticleProgram := 0;
+      end;
+      if FDecayProgram <> 0 then
+      begin
+        glDeleteProgram(FDecayProgram);
+        FDecayProgram := 0;
+      end;
+      if FOutputTex <> 0 then
+      begin
+        glDeleteTextures(1, @FOutputTex);
+        FOutputTex := 0;
+      end;
+      if FParticleSSBO <> 0 then
+      begin
+        glDeleteBuffers(1, @FParticleSSBO);
+        FParticleSSBO := 0;
+      end;
+      if (FPBOs[0] <> 0) or (FPBOs[1] <> 0) then
+      begin
+        glDeleteBuffers(2, @FPBOs[0]);
+        FPBOs[0] := 0;
+        FPBOs[1] := 0;
+      end;
+      wglMakeCurrent(0, 0);
+    end;
     wglDeleteContext(FGLContext);
     FGLContext := 0;
   end;
@@ -2994,6 +3012,8 @@ begin
   FDummyDC := 0;
   FGLReady := False;
 end;
+
+
 
 procedure TGPUAliveComponentHost.ResizeTextures(NewW, NewH: Integer);
 var
