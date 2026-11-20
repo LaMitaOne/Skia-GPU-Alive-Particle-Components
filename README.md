@@ -70,3 +70,7 @@ Zipped exe and sample project included.
 ## License       
        
 MIT License – feel free to test, break things, and experiment.       
+      
+And nobody wants to know, but yes — it runs smooth on my fanless Asus UX305ca too @ ~40% CPU, ~30% GPU oO  
+*Where no UX305CA has ever gone before* :D  
+
